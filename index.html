@@ -21,11 +21,11 @@
 </head>
 <body>
 
-	Coding is <div id="magic"></div>
+	Coding is &nbsp;<div id="magic"></div>
 
 	<script>
 
-		var words = ["fun", "exciting", "about not giving up", "being helpful", "being open", "what I learned at CodingDojo!"],
+		var words = ["fun", "something I wanna get good at!!!", "exciting", "about not giving up", "being helpful", "being open", "what I learned at CodingDojo!"],
 			el = document.getElementById('magic'),
 			word_counter = 0,
 			character_counter = 0;
@@ -34,7 +34,7 @@
 		{
 			el.innerHTML = el.innerHTML+words[word_counter][character_counter++];
 
-			if(character_counter == words[word_counter].length)
+			if(character_counter == words[word_counter].length+1) //added one to length to show last character
 			{
 				word_counter++; 	//choose a different word
 				character_counter = 0;	//start over with the first character of the word
